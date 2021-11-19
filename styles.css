@@ -144,6 +144,15 @@ a {
     border: 0;
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 @media (min-width: 991px) {
     .container {
         max-width: 960px;
