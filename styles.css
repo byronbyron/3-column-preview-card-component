@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 @import url('normalize.css');
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 :root {
     --bright-orange: hsl(31, 77%, 52%);
@@ -22,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 375px;
+    min-height: 100vh;
     color: var(--white);
     background-color: var(--very-light-gray);
 }
@@ -122,17 +125,6 @@ a {
     border-color: var(--white);
 }
 
-.attribution {
-    display: none;
-    color: white;
-    font-size: 11px;
-    text-align: center
-}
-
-.attribution a {
-    color: white
-}
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -148,16 +140,23 @@ a {
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: black;
+    margin: 1rem 0;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    text-decoration: underline;
+    color: black;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    color: var(--dark-cyan);
 }
 
 @media (min-width: 991px) {
     .container {
         max-width: 960px;
-        height: 100vh;
         padding: 0 1.25rem;
     }
 
